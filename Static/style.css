@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #356d1c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos de botones */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5cb85c; /* Un tono más oscuro de verde */
+    transform: scale(1.05); /* Aumentar el tamaño del botón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+}
+
+.btn:active {
+    transform: scale(0.95); /* Efecto de hundimiento al hacer clic */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+}
+
+/* Estilos de imagen en la marca de la barra de navegación */
+.navbar-brand img {
+    margin-left: 10px; /* Espacio entre el texto y el logo */
+    height: 40px; /* Ajusta la altura según lo necesites */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculados</title>
+</head>
+<body>
+    <h2>Lista de Personas Matriculadas</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Grado</th>
+            <th>Carrera</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Nombre del Encargado</th>
+            <th>Numero de identidad</th>
+        </tr>
+        {% for matriculado in matriculados %}
+        <tr>
+            <td>{{ matriculado[1] }}</td>
+            <td>{{ matriculado[2] }}</td>
+            <td>{{ matriculado[3] }}</td>
+            <td>{{ matriculado[4] }}</td>
+            <td>{{ matriculado[5] }}</td>
+            <td>{{ matriculado[6] }}</td>
+            <td>{{ matriculado[7] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+</body>
+</html>
