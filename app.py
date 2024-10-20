@@ -38,7 +38,9 @@ def enviar_correo(destinatario):
 
 @app.route('/')
 def index():
+    print("Accediendo a la ruta /")
     return render_template('index.html')
+
 
 @app.route('/matricula', methods=['GET', 'POST'])
 def matricula():
